@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    background-color: antiquewhite;
+    margin: auto;
+}
+.form{
+    padding: 20px;
+    
+}
+#input{
+    width: 80%;
+    margin-right: 10px;
+    padding: 12px 0px;
+}
+.btn1{
+    padding: 10px 16px;
+}
+.text{
+    list-style-type: none;
+    overflow: hidden;
+}
+li{
+    padding: 20px;
+    border: 1px solid black;
+    
+
+}
+button{
+    float: right;
+    right: 10px;
+    font-size: 18px;
+    padding: 4px;
+}
+
