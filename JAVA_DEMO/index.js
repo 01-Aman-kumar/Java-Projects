@@ -9,5 +9,5 @@ try{
     console.log(err)
 }
 console.log("a+b: ",a+b);
-
+console.log("a+b: ",a+b);
 console.log("a+b: ",a+b);
