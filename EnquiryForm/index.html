@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiry_form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="enquiryForm">
-        <h1>Enquiry Form</h1>
-        <form action="" id="formData">
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" placeholder="enter your name" id="name">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" placeholder="enter your email" id="email">
-            </div>
-            <div>
-                <label for="phone">Phone:</label>
-                <input type="Phone" placeholder="enter phone number" id="phone">
-            </div>
-            <div>
-                <label for="message">Message:</label>
-                <input type="text" name="message" id="message" placeholder="type your message">
-            </div>
-            <div>
-                <button type="submit" class="btn">Submit</button>
-            </div>
-        </form>
-    </div>
-    <div class="table">
-        <h1>Enquiry data</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Message</th>
-                </tr>
-            </thead>
-            <tbody class="tbody">
-            </tbody>
-        </table>
-    </div>
+    <h2>Register</h2>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <div id="nameError" class="error"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <div id="emailError" class="error"></div>
+
+        <button type="submit">Submit</button>
+        <div id="formMessage" class="success"></div>
+    </form>
+
+    <h3>Submitted Users</h3>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be inserted here -->
+        </tbody>
+    </table>
     <script src="script.js"></script>
 </body>
+
 </html>
