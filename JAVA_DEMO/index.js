@@ -1,13 +1,30 @@
-let a=5;
-let b=3;
-console.log("a: ",a);
-console.log("b: ",b);
-console.log("a+b: ",a+b);
-try{
-    console.log("a+c: ",a+c);
-}catch(err){
-    console.log(err)
-}
-console.log("a+b: ",a+b);
-console.log("a+b: ",a+b);
-console.log("a+b: ",a+b);
+let arr=[
+    {
+        name:"aman",
+        age:16,
+        course:"btech"
+    },
+    {
+        name:"sahil",
+        age:16,
+        course:"btech"
+    },
+    {
+        name:"Rohan",
+        age:16,
+        course:"btech"
+    },
+    {
+        name:"manish",
+        age:16,
+        course:"btech"
+    },
+    {
+        name:"sakshi",
+        age:16,
+        course:"btech"
+    }
+]
+arr.map((items,i)=>{
+    console.log(`hello i am ${items.name} form ${items.course} department`)
+})
